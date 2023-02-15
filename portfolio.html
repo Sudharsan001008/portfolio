@@ -1,0 +1,345 @@
+<DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8"
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+       <style>
+         
+         #header{
+              grid-area:header;
+              background-image: url("images/2.jpg");
+               
+             
+             
+         }
+         img{
+         
+             margin-top: 40px;
+             margin-left:150px;
+            image-rendering: auto;
+             border: 5px solid rgb(96, 191, 207);
+          }
+         a{
+            text-decoration: none;
+             color: rgb(255, 255, 255);
+           }
+         .nav1{
+              display:flex;
+              margin:3px;
+              flex-wrap: wrap;
+             justify-content: space-evenly;
+             color: rgb(96, 191, 207);
+             text-shadow: 20px;
+             border: 1px rgb(218, 204, 204);
+             background-image: url("images/2.jpg");
+             border: 1px solid rgb(230, 211, 211);
+            font-size:x-large;
+         
+          }
+          .about{
+             border:none;
+             text-align:center;
+             font-size:20px;
+          }
+       
+         .section1{
+              text-align:center;
+              font-size:30px;
+          }
+           .section4{
+                   
+                   margin: auto;
+                   width: 300px;
+                   margin-bottom: 10px;
+                   margin-top: 10px;
+                   font-size:xx-large;
+           }
+           .section5{
+                   
+                   margin: auto;
+                   width: 350px;
+                   margin-bottom: 10px;
+                   margin-top: 10px;
+                   font-size:xx-large;
+          }
+           .section3{
+  
+                   margin: auto;
+                   width: 210px;
+                   margin-bottom: 10px;
+                   margin-top: 10px;
+                   font-size:xx-large;
+          }  
+          .ul1{
+              margin: auto;
+              width: 250px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              font-size:30px;
+             
+          }
+         
+         
+         .ms1{
+             grid-area:ms1;
+              font-size:25px;
+          }
+          .ms2{
+             grid-area:ms2;
+          }
+         .ma{
+             grid-area:ma;
+          }
+          #main{
+              grid-area:main;
+              display:grid;
+              grid-template-areas:
+              'ms1 ma'
+              'ms2 ma';
+              margin:10px;
+              font-size:25px;
+             
+         }
+         #event1{
+              grid-area:event1;
+              display:grid;
+              grid-template-areas:
+              'ms1'
+              'ms2';
+              margin:10px;
+         }
+         
+         #event2{
+              grid-area:event2;
+                  display:grid;
+              grid-template-areas:
+              'ms1 '
+              'ms2  ';
+              margin:10px;
+         }
+         
+         #testonminal{
+              grid-area:testonminal;
+                  display:grid;
+              grid-template-areas:
+              'ms1'
+              'ms2';
+              margin:10px;
+         }
+            #event4{
+              grid-area:event4;
+                  display:grid;
+              grid-template-areas:
+              'ms1'
+              'ms2';
+              margin:10px;
+         }
+             #event5{
+              grid-area:event5;
+                  display:grid;
+              grid-template-areas:
+              'ms1'
+              'ms2 ';
+              margin:10px;
+         }
+         
+         
+          #footer{
+              display:flexbox;
+              border: 1px solid black;
+              background-image: url("images/2.jpg");
+              width:187%;
+              justify-content:space-between;
+             
+         }
+  
+         #container{
+              display:grid;
+              grid-template-areas:
+              'header header header'
+              'main main main'
+              'event1 event1 event1'
+              'event2 event2 event2'
+              'testonminal testonminal testonminal'
+               'event4 event4 event4'
+              'event5 event5 event5'
+              'footer footer footer';
+               
+             
+              background-image: url("images/5.jpg");
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+               color: rgb(247, 247, 247);
+             
+          }
+         #container div{
+         
+          margin:5px;
+         
+         }
+  
+       </style>
+  </head>
+  <body>
+        <div id=container>
+        <div id="header">
+         
+        <nav class="nav1">
+         
+          <p>PORTFOLIO</p>
+           <p><a href="#main">Home</a></p>
+          <p><a href="#event1">Education</a></p>
+        <p><a href="#event2">Intrest</a></p>
+        <p><a href="#testonminal">Technical Skills</a></p>
+        <p><a href="#event4">Certification</a></p>
+        <p><a href="#event5">Contact</a></p>
+        <p><a href="images/my resume.pdf" download onclick="window.open('images/my resume.pdf')"><span class="download"></span> Resume</a></p>
+        </na>
+        </div>
+        <div id="main">
+           <div class="ms1">
+            <h1>About</h1>
+           </div>
+           <div class="ms2">
+           <div class="about">
+           <h1> I AM SUDHARSAN J</h1>
+           <h2>STUDENT FRONT-END DEVELEPER</h2>
+          </div>
+           </div>
+           <div class="ma"><img src="images/my.jpg" hight="400px" width="300px"></div>
+        </div>
+        <div id="event1">
+             <div class="ms1"><h1>Education</h1></div>
+           <div class="ms2">
+           <section class="section1">
+           <article><p><strong>Bachelor of Enginnering-CSE</strong><p>
+                    <p>National Enginnering College</br>
+                       Kovilpatti|2021-2024</br>
+                        CGPA:7.5
+
+                       </p>
+           </article>
+               <article><p><strong>DIPLAMO</strong><p>
+                    <p>Laksmi ammal polytechnic college </br>
+                      Kovilpatti|2019-2021</br>
+                       precentage:87
+                       </p>
+           </article>
+              <article><p><strong>SSLC</strong><p>
+                    <p>Laksmi mills higher secondary school</br>
+                      Kovilpatti|2017</br>
+                       precentage:89
+                       </p>
+           </article>
+  
+           </section>
+           </div>
+         
+           
+       </div>
+        <div id="event2">
+            <div class="ms1"><h1>Intrest</h1></div>
+           <div class="ms2">
+           <section2 class="section2">
+             <strong>
+             <ul class="ul1">
+             <li>Mediation</li>
+             <li>Solving Problems</li>
+             <li>Yoga</li>
+             <li>Reading</li>
+             <li>body building</li>
+             <li>Cricket</li>
+             <li>Runing</li>
+           </ul>
+           </strong>
+           </section>
+           </div>
+           
+          </div>
+        <div id="testonminal">
+            <div class="ms1">
+            <h1>Technical Skills</h1>
+            </div>
+           <div class="ms2">
+          <section class="section3">
+           <label for="disk_c"><h3>C</h3></label>
+         <meter id="disk_c" value="7" min="0" max="10">2 out of 10</meter><br>
+          <label for="disk_d"><h3>Networking:</h3></label>
+          <meter id="disk_d" value="0.7">60%</meter></br>
+            <label for="disk_d"><h3>SQL:</h3></label>
+          <meter id="disk_d" value="0.6">60%</meter></br>
+          <label for="disk_d"><h3>Java:</h3></label>
+          <meter id="disk_d" value="0.5">60%</meter></br>
+           </section>
+            </div>
+         
+            </div>
+        <div id="event4">
+          <div class="ms1"><h1>Certification</h1></div>
+           <div class="ms2">
+            <section class="section4">
+             <strong><p>NPTEL</P></strong>
+             <a href="#"><p>1.Problem Solving Through C programming</p></a>
+            
+             <strong><p>Internship<i>-  Cisco networking ac ademy</i></P></strong>
+                <a href="#">1.Netwoking</a>
+             <strong><p>Internship<i>-Mistral</i></P></strong>
+               <a href="#">1.Foundation Trainig(ongoing)</a><br/>
+             
+            </section>
+           </div>
+        </div>
+         <div id="event5">
+          <div class="ms1"><h1>Contact</h1></div>
+
+          <center>
+            <div class = "head1" style="font-weight: bold; font-size: 1.5em;"><p>Hello there,</p></div><br>
+            <div class="head3">
+             <p style="font-size: 1.5em;"> If you're looking to get in touch with me you're in the right place!... I'm currently looking for new opportunities, my inbox is always open.</p> 
+              <br><br>
+              <div class="head5">
+            <form action="https://formsubmit.co/nigam01shrey@gmail.com" method="post" style="background-color: rgba(0, 0, 0, 0.6); padding-top: 45px; padding-bottom: 45px;">
+                  <div>
+                    <label for="name" class="bodytext">Name:
+                      <input type="text" name="name" id="name" style="color: rgb(10, 8, 8);" />
+                    </label>
+                  </div><br>
+                  <div>
+                    <label for="email"  class="bodytext">Email:
+                      <input type="text" name="email" id="email"  style="color: black;"/>
+                    </label>
+                  </div><br>
+                  <div>
+                    <label  class="bodytext">Message:</label>
+                    <br />
+                    <textarea name="comment" rows="9" cols="24"  id="comment"  class="bodytext" style="color: black;"></textarea><br><br>
+                  </div>
+                  <div  class="bodytext" id="btn">
+                    <input type="submit" name="submit" value="Send"  style="color: black;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="reset" value="Clear"  style="color: black;"/></div>
+                  </div>
+              
+      <!-- 				<input type="hidden" name="_autoresponse" value="Thanks for your response, will contact you shortly!!"> -->
+                </form>
+             </div>
+            </div>
+      
+            </center>
+          </div>
+         
+        </div>
+       
+         <div id="footer">
+          
+         <a href="https://github.com/Sudharsan001008"><img src="images/github.jpg" hight="30px" width="30px"></a>
+          <a href="https://www.linkedin.com/in/sudharsan2012406/"><img src="images/linked.jpg" hight="30px" width="30px"></a>
+          <a href="https://www.instagram.com/sudharsan_jvms/"><img src="images/insta.jpg" hight="30px" width="30px"></a>
+
+        </div>
+        </div>
+       
+  </body>
+  </html>
+  
